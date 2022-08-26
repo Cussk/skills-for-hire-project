@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #273e92;
+    color: #fff;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, p, a {
+    font-family: "Cabin", sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+footer {
+    background-color: #273e92;
+    max-width: 100%; 
+    color: #fff;
+    display: flex;
+}
+
+a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main_img {
+    max-width: 1000px;
+}
+
+@media screen and (max-width: 1000px) {
+    .main_img {
+        max-width: 100%;
+    }
+}
+.img_text {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 46px;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+  }
+
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  #nav_btn {
+    height: 50px;
+    width: 50px;
+  }
+
+  a.nav_foot {
+    font-size: 50px;
+    padding: 30px;
+    display: flex;
+  }
+
+  a.icon {
+    font-size: 36px;
+    padding: 30px;
+    color: #000;
+    display: flex;
+    
+  }
+
+  a.icon:hover {
+    color: #fff;
+  }
+
+  .copy {
+    padding: 30px;
+  }
