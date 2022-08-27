@@ -5,14 +5,6 @@
 
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 
-    <meta property="og:title" content="Halifax Canoe and Kayak">
-    <meta property="og:type"  content="website">
-    <meta property="og:image" content="./images/paddle-white.png">
-    <meta property="og:url"   content="index.html">
-    <meta property="og:description" content="Halifax Canoe and Kayak, experience the Canadian wilderness on the water.">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Halifax Canoe and Kayak">
-
     <title>Halifax Canoe and Kayak</title>
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -27,15 +19,28 @@
     
 </head>
 <body>
+    <script>
+        // jQuery toggle function
+        $(document).ready(function(){
+            $("#nav_btn").click(function(){
+                $("#sliding_nav").slideToggle();
+            });
+        });
+    </script>
     <header>
+        <nav id="nav_head">
+            <img src="/images/hamburger.png" alt="Nav Button" id="nav_btn">
+            
+            <div id="sliding_nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="book_trip.html">Book Trip</a></li>
+                    <li><a href="admin_login.html">Admin Login</a></li>
+                </ul>
+            </div>
+        </nav>
         <h1>Halifax Canoe and Kayak</h1>
         <img src="/images/paddle-white.png" alt="Logo" class="logo">
-        <nav class="nav_header" id="sliding_nav">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="book_trip.html">Book Trip</a></div>
-            <div><a href="admin_login.html">Admin Login</a></div>
-        </nav>
-        <img src="/images/hamburger.png" alt="Nav Bar Button" id="nav_btn">
     </header>
 
     <main>
@@ -76,9 +81,11 @@
     <footer>
         <p class="copy">&copy; 2022 Copyright Halifax Canoe and Kayak.</p>
         <nav class="nav_foot">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="book_trip.html">Book Trip</a></div>
-            <div><a href="admin_login.html">Admin Login</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book_trip.html">Book Trip</a></li>
+                <li><a href="admin_login.html">Admin Login</a></li>
+            </ul> 
         </nav>
             <div>
                 <a href="https://www.facebook.com" class="icon"><i class="fab fa-facebook"></i></a>

@@ -1,3 +1,7 @@
+* {
+    font-family: "Cabin", sans-serif;
+}
+
 body {
     margin: 0;
 }
@@ -6,14 +10,27 @@ header {
     background-color: #273e92;
     color: #fff;
     max-width: 100%;
-}
-
-h1, h2, h3, h4, p, a {
-    font-family: "Cabin", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 h1 {
     margin: 0;
+    text-align: center;
+}
+
+nav img {
+    display: flex;
+}
+
+#sliding_nav {
+    display: none;
+}
+
+#sliding_nav ul {
+    font-size: 36px;
+    list-style: none;
 }
 
 main {
@@ -30,9 +47,12 @@ main {
 
 footer {
     background-color: #273e92;
-    max-width: 100%; 
+    max-width: 100%;
     color: #fff;
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 a:link {
@@ -82,22 +102,33 @@ a:active {
   .logo {
     height: 50px;
     width: 50px;
+    padding-right: 10px;
+
   }
 
   #nav_btn {
     height: 50px;
     width: 50px;
+    padding-left: 10px;
   }
 
-  a.nav_foot {
-    font-size: 50px;
-    padding: 30px;
+  #nav_btn:hover {
+    cursor: pointer;
+  }
+
+  .nav_foot ul {
+    font-size: 20px;
+    list-style: none;
     display: flex;
+  }
+
+  .nav_foot ul li {
+    padding: 15px 15px 0 15px;
   }
 
   a.icon {
     font-size: 36px;
-    padding: 30px;
+    padding: 30px 0 0 0;
     color: #000;
     display: flex;
     
@@ -108,5 +139,8 @@ a:active {
   }
 
   .copy {
-    padding: 30px;
+    padding: 30px 0 0 30px;
+    text-align: center;
   }
+  
+
