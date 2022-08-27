@@ -26,6 +26,14 @@
                 $("#sliding_nav").slideToggle();
             });
         });
+
+        // jQuery Dark Mode toggle function
+        $(document).ready(function(){
+            $("#dm_btn").change(function(){
+                $("body").toggleClass("dark_mode");
+            });
+        });
+
     </script>
     <header>
         <nav id="nav_head">
@@ -44,10 +52,21 @@
     </header>
 
     <main>
+
         <section class="img_text">
             <img src="/images/canoe.jpg" alt="Come Experience Canada" class="main_img">
             <div class="centered">Come Experience Canada</div>
         </section>
+
+        <!-- dark mode button -->
+        <div id="dm_btn">
+            <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class='fas fa-sun'></i>
+            <div class='ball'></div>
+          </label>
+        </div>
 
         <article>
             <h2>Upcoming Adventures</h2>
@@ -62,7 +81,7 @@
 
             <h4>Summary</h4>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptate atque explicabo quos deleniti cum ratione ea. Nisi consequatur reiciendis a eligendi quis, modi id asperiores impedit. Error, numquam nam.</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptate atque explicabo quos deleniti cum ratione ea. Nisi consequatur reiciendis a eligendi quis, modi id asperiores impedit. Error, numquam nam.</p>
 
             <h3>Sydney</h3>
 
@@ -74,7 +93,7 @@
 
             <h4>Summary</h4>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusantium vero numquam, sapiente et dolore officiis esse voluptatibus doloremque cumque quisquam, tenetur neque praesentium voluptate eius, laudantium eaque qui cupiditate.</p>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusantium vero numquam, sapiente et dolore officiis esse voluptatibus doloremque cumque quisquam, tenetur neque praesentium voluptate eius, laudantium eaque qui cupiditate.</p>
         </article>
     </main>
 
