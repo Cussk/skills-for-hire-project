@@ -25,6 +25,12 @@ header {
 h1 {
     margin: 0;
     text-align: center;
+    flex: 1;
+}
+
+#nav_head {
+    position: relative;
+    display: inline-block;  
 }
 
 nav img {
@@ -33,6 +39,17 @@ nav img {
 
 #sliding_nav {
     display: none;
+    display: none;
+    position: absolute;
+    background-color: #273e92;
+    min-width: 250px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 500) {
+    #sliding_nav {
+        margin-top: 22px;
+    }
 }
 
 #sliding_nav ul {
