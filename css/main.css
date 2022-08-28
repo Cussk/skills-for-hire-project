@@ -1,13 +1,16 @@
+/* sets cabin font to entire document */
 * {
     font-family: "Cabin", sans-serif;
 }
 
+/* zeroed margin for body as well as define light mode characteristics */
 body {
     margin: 0;
     background-color: #fff;
     color: #000;
 }
 
+/* dark mode colours, initially hidden */
 .dark_mode {
     background-color: #000;
     color: #fff;
@@ -16,7 +19,9 @@ body {
 header {
     background-color: #273e92;
     color: #fff;
+    /* uses whole screen width */
     max-width: 100%;
+    /* makes header a flex box */
     display: flex;
     justify-content: space-between;
     
@@ -28,6 +33,7 @@ h1 {
     flex: 1;
 }
 
+/* nav container positions dropdown box */
 #nav_head {
     position: relative;
     display: inline-block;  
@@ -37,15 +43,17 @@ nav img {
     display: flex;
 }
 
+/* dropdown box starts hidden*/
 #sliding_nav {
-    display: none;
     display: none;
     position: absolute;
     background-color: #273e92;
     min-width: 250px;
+    /* brings layer to front */
     z-index: 1;
 }
 
+/* adjusts dropdown box on small screens to not cover header */
 @media screen and (max-width: 500) {
     #sliding_nav {
         margin-top: 22px;
@@ -57,11 +65,13 @@ nav img {
     list-style: none;
 }
 
+/* limits main section 1000px width on large screens */
 main {
     max-width: 1000px;
     margin: auto;
 }
 
+/* smaller screens use full width for main section */
 @media screen and (max-width: 1000px) {
     main {
         max-width: 100%;
@@ -69,6 +79,7 @@ main {
     }
 }
 
+/* footer flex box, ful screen width */
 footer {
     background-color: #273e92;
     max-width: 100%;
@@ -79,6 +90,7 @@ footer {
     align-content: center;
 }
 
+/* next 4 selectors create link hover effect and ermove hyperlink underline */
 a:link {
     text-decoration: none;
     color: #fff;
@@ -99,20 +111,26 @@ a:active {
     color: #fff;
 }
 
+/* limits main image size to max 1000px in large screens */
 .main_img {
     max-width: 1000px;
 }
 
+/* full screen coverage for image in smaller screens */
 @media screen and (max-width: 1000px) {
     .main_img {
         max-width: 100%;
     }
 }
+
+/* positions texs on main image */
 .img_text {
     position: relative;
     text-align: center;
     color: #fff;
   }
+
+  /* styles text on image */
   .centered {
     position: absolute;
     top: 50%;
@@ -127,7 +145,6 @@ a:active {
     height: 50px;
     width: 50px;
     padding-right: 10px;
-
   }
 
   #nav_btn {
@@ -136,6 +153,7 @@ a:active {
     padding-left: 10px;
   }
 
+  /* changes curson when hovering over hamburger */
   #nav_btn:hover {
     cursor: pointer;
   }
@@ -150,14 +168,15 @@ a:active {
     padding: 15px 15px 0 15px;
   }
 
+  /* style and alignment social media icons */
   a.icon {
     font-size: 36px;
     padding: 30px 0 0 0;
     color: #000;
     display: flex;
-    
   }
 
+  /* hover effect for social icons */
   a.icon:hover {
     color: #fff;
   }
@@ -199,6 +218,7 @@ a:active {
     position: absolute;
   }
 
+  /* style for dark mode button background */
   .label {
     width: 50px;
     height: 26px;
@@ -207,7 +227,6 @@ a:active {
     padding: 5px;
     position: relative;
     transform: scale(1.5);
-    
   }
 
   /* ball design and movement */
@@ -222,6 +241,7 @@ a:active {
     transition: transform 0.2s linear;
   }
 
+  /* slides the ball when clicked */
   .checkbox:checked + .label .ball{
     transform: translateX(20px);
   }
