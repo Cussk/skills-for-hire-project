@@ -265,8 +265,33 @@ a:active {
     color: #fff;
   }
 
-  .
+  .form_label {
+    padding-right: 1rem;
+  }
   
+  #email {
+    margin-left: 21px;
+  }
+
+  #location {
+    padding-right: 102px;
+  }
+
+  #trip-date {
+    margin-left: 11.5px;
+    padding-right: 52.5px;
+  }
+
+  .form_btn {
+    width: 5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+
+  .form_btn:hover {
+    background-color: rgb(75, 74, 74);
+    color: #fff;
+  }
 
   
 
