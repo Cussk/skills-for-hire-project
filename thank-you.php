@@ -12,7 +12,10 @@
     ?>
 
     <main>
-        
+        <h2>Thank You</h2>
+        <hr/>
+        <p class="thank_p"> Thank you: <?php echo $_GET["email"];?>.</p>
+        <p class="thank_p"> We will contact you about the: <br/> <?php echo $_GET["location"];?> trip on the <?php echo $_GET["trip-date"];?>.</p>
     </main>
 
     <?php 

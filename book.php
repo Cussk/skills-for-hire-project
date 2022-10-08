@@ -21,8 +21,8 @@
         <label class="form_label" for="location">Location:</label>
         <select id="location" name="location">
             <option value="" selected disabled>Select</option>
-            <option value="halifax">Halifax</option>
-            <option value="sydney">Sydney</option>
+            <option value="Halifax">Halifax</option>
+            <option value="Sydney">Sydney</option>
         </select><br>
         <label for="trip-date">Trip Date:</label>
         <input class="form_input" type="date" id="trip-date" name="trip-date" required><br>
