@@ -40,7 +40,7 @@
     <header>
         <!-- container for dropdown and button -->
         <nav id="nav_head">
-            <!-- hamburge image turned into button for dropdown -->
+            <!-- hamburger image turned into button for dropdown -->
             <img src="/images/hamburger.png" alt="Nav Button" id="nav_btn">
             <!-- container for hidden dropdown list -->
             <div id="sliding_nav">
