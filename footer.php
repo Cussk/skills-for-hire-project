@@ -8,15 +8,17 @@
                 <li><a href="admin_login.php">Admin Login</a></li>
             </ul> 
         </nav>
-            <div>
+        <div class="social_container">
+            
                 <a href="https://www.facebook.com" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
-            </div>
-            <div>
+            
+            
                 <a href="https://www.twitter.com" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div>
+            
+            
                 <a href="https://www.instagram.com" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
-            </div>
+            
+        </div>
     </footer>
 </body>
 </html>

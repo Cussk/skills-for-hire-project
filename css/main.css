@@ -73,6 +73,7 @@ nav img {
 main {
     max-width: 1000px;
     margin: auto;
+    min-height: 90vh; /* forces minimum view height, pushing footer to bottom of screen*/
 }
 
 /* smaller screens use full width for main section */
@@ -83,7 +84,7 @@ main {
     }
 }
 
-/* footer flex box, ful screen width */
+/* footer flex box, full screen width */
 footer {
     background-color: #273e92;
     max-width: 100%;
@@ -92,6 +93,16 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: center;
+}
+
+footer .social_container {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+footer .social_container a {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* next 4 selectors create link hover effect and emeove hyperlink underline */
@@ -253,6 +264,8 @@ a:active {
   .fa-sun {
     color: #fff;
   }
+
+  .
   
 
   
