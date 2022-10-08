@@ -7,70 +7,16 @@
 
     <title>Halifax Canoe and Kayak</title>
 
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cabin">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script src="https://kit.fontawesome.com/c8d3d26770.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-    <script>
-        // jQuery toggle function
-        $(document).ready(function(){
-            $("#nav_btn").click(function(){
-                $("#sliding_nav").slideToggle();
-            });
-        });
-
-        // jQuery Dark Mode toggle function
-        $(document).ready(function(){
-            $("#dm_btn").change(function(){
-                $("body").toggleClass("dark_mode");
-            });
-        });
-
-    </script>
-    <header>
-        <!-- container for dropdown and button -->
-        <nav id="nav_head">
-            <!-- hamburger image turned into button for dropdown -->
-            <img src="/images/hamburger.png" alt="Nav Button" id="nav_btn">
-            <!-- container for hidden dropdown list -->
-            <div id="sliding_nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="book_trip.html">Book Trip</a></li>
-                    <li><a href="admin_login.html">Admin Login</a></li>
-                </ul>
-            </div>
-        </nav>
-        <h1>Halifax Canoe and Kayak</h1>
-        <img src="/images/paddle-white.png" alt="Logo" class="logo">
-    </header>
+    <?php
+        include 'header.php';
+    ?>
 
     <main>
 
         <section class="img_text">
-            <img src="/images/canoe.jpg" alt="Come Experience Canada" class="main_img">
+            <img src="./images/canoe.jpg" alt="Come Experience Canada" class="main_img">
             <div class="centered">Come Experience Canada</div>
         </section>
-
-        <!-- dark mode button -->
-        <div id="dm_btn">
-            <input type="checkbox" class="checkbox" id="checkbox">
-          <label for="checkbox" class="label">
-            <i class="fas fa-moon"></i>
-            <i class='fas fa-sun'></i>
-            <div class='ball'></div>
-          </label>
-        </div>
 
         <article>
             <h2>Upcoming Adventures</h2>
@@ -101,25 +47,6 @@
         </article>
     </main>
 
-    <footer>
-        <!-- &copy syntax for copyright symbol -->
-        <p class="copy">&copy; 2022 Copyright Halifax Canoe and Kayak.</p>
-        <nav class="nav_foot">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="book_trip.html">Book Trip</a></li>
-                <li><a href="admin_login.html">Admin Login</a></li>
-            </ul> 
-        </nav>
-            <div>
-                <a href="https://www.facebook.com" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
-            </div>
-            <div>
-                <a href="https://www.twitter.com" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
-            </div>
-            <div>
-                <a href="https://www.instagram.com" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
-            </div>
-    </footer>
-</body>
-</html>
+    <?php 
+        include 'footer.php';
+    ?>

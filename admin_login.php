@@ -5,14 +5,14 @@
 
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 
-    <title>Thank You</title>
+    <title>Admin</title>
 
     <?php
         include 'header.php';
     ?>
 
     <main>
-        
+
     </main>
 
     <?php 
