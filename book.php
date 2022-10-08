@@ -12,7 +12,11 @@
     ?>
 
     <main>
+    <h2>Book A Trip</h2>
+    <hr>
+    <form>
 
+    </form>
     </main>
 
     <?php 

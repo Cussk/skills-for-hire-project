@@ -3,9 +3,9 @@
         <p class="copy">&copy; 2022 Copyright Halifax Canoe and Kayak.</p>
         <nav class="nav_foot">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="book_trip.html">Book Trip</a></li>
-                <li><a href="admin_login.html">Admin Login</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="book.php">Book Trip</a></li>
+                <li><a href="admin_login.php">Admin Login</a></li>
             </ul> 
         </nav>
             <div>

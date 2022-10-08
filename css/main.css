@@ -33,6 +33,10 @@ h1 {
     flex: 1;
 }
 
+hr {
+    border: 1px solid #000; 
+}
+
 /* nav container positions dropdown box */
 #nav_head {
     position: relative;
@@ -231,19 +235,19 @@ a:active {
 
   /* ball design and movement */
   .ball {
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     background-color: #fff;
     position: absolute;
-    top: 3px;
-    left: 3px;
+    top: 4px;
+    left: 2px;
     border-radius: 50%;
     transition: transform 0.2s linear;
   }
 
   /* slides the ball when clicked */
   .checkbox:checked + .label .ball{
-    transform: translateX(15px);
+    transform: translateX(18px);
   }
 
   .fa-sun {
