@@ -21,29 +21,25 @@
         <article>
             <h2>Upcoming Adventures</h2>
 
-            <h3>Halifax</h3>
+            <?php
+	            $sql = "SELECT * FROM trips";
+	            $result = mysqli_query($conn, $sql);
 
-            <p class="date_duration">
-                Date: 2023-04-12
-                <br>
-                Duration: 4 days
-            </p>
-
-            <h4>Summary</h4>
-
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptate atque explicabo quos deleniti cum ratione ea. Nisi consequatur reiciendis a eligendi quis, modi id asperiores impedit. Error, numquam nam.</p>
-
-            <h3>Sydney</h3>
-
-            <p class="date_duration">
-                Date: 2023-05-10
-                <br>
-                Duration: 2 days
-            </p>
-
-            <h4>Summary</h4>
-
-            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusantium vero numquam, sapiente et dolore officiis esse voluptatibus doloremque cumque quisquam, tenetur neque praesentium voluptate eius, laudantium eaque qui cupiditate.</p>
+                //if there exist rows in the DB
+	            if (mysqli_num_rows($result) > 0) {
+	             // output data of each row dynamically on page
+	             while($row = mysqli_fetch_assoc($result)) {
+	                 echo "<h3>" . $row["heading"] . "</h3>";
+                     echo "<p class='date_duration'>" . "Date: " . $row["tripDate"] . "</p>";
+                     echo "<p class='date_duration'>" . "Duration: " . $row["duration"] . " days" . "</p>";
+                     echo "<h4>Summary</h4>";
+                     echo "<p class='description'>" . $row["summary"] . "</p>";
+	                }
+                //if no rows in DB print below
+	            } else {
+	                    echo "0 results";
+	                    }
+            ?>
         </article>
     </main>
 
