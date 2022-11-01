@@ -266,21 +266,22 @@ a:active {
   }
 
   .form_label {
+    display: inline-block;
+    width: 100px;
     padding-right: 1rem;
   }
   
-  #email {
-    margin-left: 21px;
-  }
+  form input {
+    padding: 8px;
+    margin: 5px;
+    width: 200px;
+}
 
-  #location {
-    padding-right: 102px;
-  }
-
-  #trip-date {
-    margin-left: 11.5px;
-    padding-right: 52.5px;
-  }
+  form select {
+    padding: 8px;
+    margin: 5px;
+    width: 220px;
+}
 
   .form_btn {
     width: 5rem;
@@ -295,5 +296,19 @@ a:active {
 
   .thank_p {
     font-size: 25px;
+  }
+
+  #adventures_link {
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration-line: underline;
+    font-size: 48px;
+    margin-top: 15rem;
+
+  }
+
+  #adventures_link:hover {
+    color: #273e92;
   }
 

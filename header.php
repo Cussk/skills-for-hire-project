@@ -12,6 +12,18 @@
     
 </head>
 <body>
+    <?php
+    /* Attempt MySQL server connection. Assuming you are running MySQL
+    server with default setting (user 'root' with no password) */
+
+        $conn = mysqli_connect("localhost", "root", "", "halifax_admin");
+     
+        // Check connection
+        if($conn === false){
+            die("ERROR: Could not connect. " . mysqli_connect_error());
+        }
+    ?>
+
     <script>
         // jQuery toggle function
         $(document).ready(function(){
@@ -38,7 +50,7 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="book.php">Book Trip</a></li>
-                    <li><a href="admin_login.php">Admin Login</a></li>
+                    <li><a href="admin_add.php">Admin</a></li>
                 </ul>
             </div>
         </nav>
